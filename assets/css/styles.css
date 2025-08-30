@@ -701,6 +701,33 @@ font-weight:600;
   margin: 10px;
 }
 
+/* Education and certification card layouts */
+.edu-grid,
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.edu-card,
+.cert-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+}
+
+.edu-degree,
+.cert-issuer {
+  font-weight: 600;
+}
+
+.edu-dates,
+.cert-id {
+  font-size: 0.9rem;
+  color: #666;
+}
+
 .descontainer {
   display: flex;
   justify-content: space-between;
