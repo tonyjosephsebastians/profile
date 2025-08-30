@@ -709,6 +709,16 @@ font-weight:600;
   margin: 10px;
 }
 
+/* Certification card layout */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.cert-card {
+  background-color: #fff;
+  border-radius: 8px;
 /* Education and certification card layouts */
 .edu-grid,
 .cert-grid {
@@ -725,6 +735,15 @@ font-weight:600;
   padding: 20px;
 }
 
+.cert-card h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.cert-issuer,
+.cert-id {
+  font-size: 0.9rem;
+  color: #555;
 .edu-degree,
 .cert-issuer {
   font-weight: 600;
@@ -746,6 +765,7 @@ font-weight:600;
 .timeline::before {
   content: "";
   position: absolute;
+  left: 20px;
   left: 0;
   top: 0;
   bottom: 0;
@@ -755,6 +775,7 @@ font-weight:600;
 
 .timeline-item {
   position: relative;
+  padding-left: 40px;
   margin-left: 20px;
   margin-bottom: 40px;
 }
@@ -762,6 +783,7 @@ font-weight:600;
 .timeline-item::before {
   content: "";
   position: absolute;
+  left: 14px;
   left: -30px;
   top: 0;
   width: 12px;
