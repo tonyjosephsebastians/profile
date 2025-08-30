@@ -686,6 +686,14 @@ font-weight:600;
   margin: 10px;
 }
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 68.75rem;
+  margin: auto;
+}
+
 .education-card {
   background-color: #fff;
   border-radius: 11px;
@@ -699,6 +707,78 @@ font-weight:600;
   box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 20px;
   margin: 10px;
+}
+
+/* Education and certification card layouts */
+.edu-grid,
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.edu-card,
+.cert-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+}
+
+.edu-degree,
+.cert-issuer {
+  font-weight: 600;
+}
+
+.edu-dates,
+.cert-id {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Timeline layout for experience and education */
+.timeline {
+  position: relative;
+  margin: 2rem 0 2rem 20px;
+  padding-left: 20px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #ccc;
+}
+
+.timeline-item {
+  position: relative;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background: var(--secondary-color);
+  border-radius: 50%;
+}
+
+.timeline-degree {
+  font-weight: 600;
+}
+
+.timeline-date {
+  font-size: 0.9rem;
+  color: #666;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 .descontainer {
