@@ -336,6 +336,8 @@ nav ul li {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .project-container p {
@@ -344,6 +346,7 @@ nav ul li {
 
 .project-title {
   margin-bottom: var(--bottom-margin);
+  overflow-wrap: anywhere;
 }
 
 .project-details {
@@ -351,6 +354,7 @@ nav ul li {
   text-align: left;
   line-height: 1.6;
   color: #333;
+  overflow-wrap: anywhere;
 }
 
 .project-card img {
@@ -374,47 +378,51 @@ nav ul li {
   margin-top: 2rem;
 }
 
-
-.education-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.education-title {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.education-title1 {
-  text-align: center;
-  margin-bottom: 1rem;
-  color: #4756df;
-}
-.education-title2{
-  text-align: left;
-  color: #50502e;
-}
-
-.education-container {
-  text-align: center;
+.project-card img {
   width: 100%;
-  padding: 1rem;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
-.education-container p {
-  padding: 0.2rem;
+.project-card .project-link {
+  align-self: flex-start;
 }
 
-.education-title {
-  margin-bottom: var(--bottom-margin);
+/* Projects section ends */
+
+/* Certifications section */
+
+.certifications {
+  background-color: var(--bg-color);
+  padding: 32px 0;
+  margin-top: 2rem;
 }
 
-.education-details {
-  text-align: left;
-  margin-bottom: var(--bottom-margin);
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
 }
 
+.cert-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 100%;
+}
+
+.cert-provider {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--secondary-color);
+  font-weight: var(--bold-font);
 .education .experience-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -461,16 +469,15 @@ nav ul li {
   padding-bottom: 40px;
 }
 
-.education-card-action -span {
-  font-size: 85%;
-  color: #666;
+.cert-name {
+  font-size: 1.05rem;
+  color: var(--primary-color);
+  line-height: 1.5;
 }
 
-
-.wrapper
-{
-	display: inline-block; 
-	text-align: left; 
+.cert-meta {
+  font-size: 0.9rem;
+  color: #555;
 }
 
 /*more skills*/
