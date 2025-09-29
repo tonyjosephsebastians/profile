@@ -370,6 +370,27 @@ nav ul li {
 
 /* Projects section ends */
 
+/*Education section */
+
+.education{
+  background-color: var(--bg-color);
+  padding: 32px 0;
+  margin-top: 2rem;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.project-card .project-link {
+  align-self: flex-start;
+}
+
+/* Projects section ends */
+
 /* Certifications section */
 
 .certifications {
@@ -402,6 +423,50 @@ nav ul li {
   letter-spacing: 0.08em;
   color: var(--secondary-color);
   font-weight: var(--bold-font);
+.education .experience-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.education-card {
+  height: 100%;
+}
+
+.education-card .experience-card-content-row {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.education-card .experience-col-s12-m10,
+.education-card .experience-card-title,
+.education-card .experience-card-role,
+.education-card .experience-card-dates {
+  text-align: left;
+}
+
+.education-card .experience-card-role {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+.education-card .experience-card-dates {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.education-card .experience-text-list ul {
+  padding-left: 1.2rem;
+}
+
+.education-card .experience-text-list li::before {
+  color: #4756df;
+}
+
+.education-card-content-row {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 40px;
 }
 
 .cert-name {
