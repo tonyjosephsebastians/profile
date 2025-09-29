@@ -480,6 +480,7 @@ nav ul li {
   margin-top: 2rem;
 }
 
+
 .certifications-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -537,6 +538,90 @@ nav ul li {
   letter-spacing: 0.08em;
   color: var(--secondary-color);
   font-weight: var(--bold-font);
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.project-card .project-link {
+  align-self: flex-start;
+}
+
+/* Projects section ends */
+
+/* Certifications section */
+
+.certifications {
+  background-color: var(--bg-color);
+  padding: 32px 0;
+  margin-top: 2rem;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.cert-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 100%;
+}
+
+.cert-provider {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--secondary-color);
+  font-weight: var(--bold-font);
+.education .experience-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.education-card {
+  height: 100%;
+}
+
+.education-card .experience-card-content-row {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.education-card .experience-col-s12-m10,
+.education-card .experience-card-title,
+.education-card .experience-card-role,
+.education-card .experience-card-dates {
+  text-align: left;
+}
+
+.education-card .experience-card-role {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+.education-card .experience-card-dates {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.education-card .experience-text-list ul {
+  padding-left: 1.2rem;
+}
+
+.education-card .experience-text-list li::before {
+  color: #4756df;
 }
 
 .cert-card .cert-meta {
@@ -874,6 +959,7 @@ font-weight:600;
   line-height: 1.6;
 }
 
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -952,6 +1038,23 @@ font-weight:600;
   padding: 20px;
   margin: 10px;
 }
+
+
+.education-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+.experience-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+
 
 .descontainer {
   display: flex;
